@@ -1,4 +1,9 @@
 /*banner section start*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Work+Sans:wght@400;600;700;800&display=swap');
+
+*{
+font-family: 'Work Sans', sans-serif;
+}
 
 .banner{
     background: #FFF;
@@ -28,24 +33,36 @@ background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
-.links{
-    text-decoration: none;
-    display: grid;
-    grid-template-rows: repeat(3,1fr);
+
+.links ul{
+   display: flex;
+   justify-content: space-evenly;
+   gap: 40px;
     padding-left: 900px;
+    padding-top: 20px;
+list-style-type: none;
+}
+.links{
+
+
 }
 .links .follow{
     border-radius: 8px;
-background: rgba(11, 2, 35, 0.10);
+    border-width: 15px;
+    background: rgba(11, 2, 35, 0.10);
+    display: flex;
+    gap: 05px;
 }
 .yt-logo{
-    width: 33.916px;
-    height: 24px;
+    width: 20px;
+    height: 16px;
     flex-shrink: 0;
+    padding-top: 4px;
 }
 .tiktok-logo{
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 16px;
+    padding-top: 4px;
     
 }
 
@@ -184,6 +201,8 @@ font-weight: 400;
 line-height: 30px;
 }
 .gamers .btn3{
+    color: #FFF;
+    text-decoration: none;
     display: inline-flex;
 padding: 21px 40px;
 align-items: flex-start;
@@ -261,26 +280,6 @@ font-style: normal;
 font-weight: 400;
 line-height: 30px;
 }
-.photoss .play-btn{
-    border-radius: 10px;
-    border-color: #FF42A5;
-    position: absolute;
-    left: 1160px;
-}
-
-.photoss .play-btn .wtc-now{
-    
-font-family: Work Sans;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-
 
 .photoss{
     display: flex;
@@ -290,6 +289,15 @@ background-clip: text;
     row-gap: 5px;
 
 }
+.photoss img:hover{
+    border: 5px solid #F948B2;
+    background-image: over;
+    align-items: center;
+    opacity: 10;
+}
+
+
+
 /*section 1 end*/
 
 .texts10{
@@ -442,6 +450,7 @@ line-height: 30px;
 
 }
 .all-total .seeall{
+    text-decoration-color: #FF42A5;
     text-decoration: none;
     display: inline-flex;
 padding: 21px 40px;
@@ -449,6 +458,7 @@ align-items: flex-start;
 gap: 10px;
 border-radius: 48px;
 background: #FFF;
+
 
 }
 .btn20{
@@ -477,6 +487,10 @@ background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 16
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+}
+.iconspck .div:hover{
+    border: 10px solid #F948B2;
+    overflow: hidden;
 }
 .iconspck figcaption{
     padding-left: 5px;
@@ -612,4 +626,16 @@ font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
+}
+
+/*starting responsive for mobile devices*/
+
+@media only screen and (max-width: 768px) {
+    .banner{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    
 }
